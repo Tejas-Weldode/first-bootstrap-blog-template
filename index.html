@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlogger Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-success navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    Tech Blogger
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2">
+                        <!-- modal triggers [upper]-->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">
+                            Sign Up
+                        </button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#signinModal">
+                            Sign In
+                        </button>
+                        <!-- modal triggers [lower] -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <!-- modal signup [upper]-->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        
+                            <label class="form-label" for="name">Enter your name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="first-name" placeholder="First name">
+                                <input type="text" class="form-control" id="last-name" placeholder="Last name">
+                            </div>
+                            
+                            <label for="email" class="form-label mt-3">Enter your email address</label>
+                            <input type="email" id="email" class="form-control">
+    
+                            <label for="phone number" class="form-label mt-3">Enter your phone number</label>
+                            <input type="number" id="phone-number" class="form-control">
+    
+                            <label for="password" class="form-label mt-3">Set a strong password</label>
+                            <input type="password" name="password" id="password" class="form-control">
+    
+                            <button class="btn btn-success mt-3">Sign Up</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal signup [lower] -->
+
+        <!-- modal signin [upper]-->
+        <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <label for="name" class="form-label">Enter Name</label>
+                        <input type="text" class="form-control">
+
+                        <label for="password" class="form-label mt-3">Enter password</label>
+                        <input type="password" name="password" id="password" class="form-control">
+
+                        <button class="btn btn-success mt-3">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal signin [lower] -->
+
+
+    </header>
+
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/Picture1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Picture2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Picture3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <h1 class="my-4">Hot topics...</h1>
+
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">blog post title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque omnis sunt
+                                laudantium in nihil similique error nesciunt aspernatur aut!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="text-bg-success bg-success">
+            &copy;Tejas Weldode 2022
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
